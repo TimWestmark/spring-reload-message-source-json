@@ -113,10 +113,7 @@ public class JsonReloadableMessageSource extends AbstractResourceBasedMessageSou
     protected String resolveCodeWithoutArguments(String code, Locale locale) {
         if (getCacheMillis() < 0) {
             PropertiesHolder propHolder = getMergedProperties(locale);
-            String result = propHolder.getProperty(code);
-            if (result != null) {
-                return result;
-            }
+            return propHolder.getProperty(code);
         }
         else {
             for (String basename : getBasenameSet()) {
@@ -142,10 +139,7 @@ public class JsonReloadableMessageSource extends AbstractResourceBasedMessageSou
     protected MessageFormat resolveCode(String code, Locale locale) {
         if (getCacheMillis() < 0) {
             PropertiesHolder propHolder = getMergedProperties(locale);
-            MessageFormat result = propHolder.getMessageFormat(code, locale);
-            if (result != null) {
-                return result;
-            }
+            return propHolder.getMessageFormat(code, locale);
         }
         else {
             for (String basename : getBasenameSet()) {
