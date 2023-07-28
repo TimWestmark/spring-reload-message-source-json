@@ -1,5 +1,9 @@
 package de.westmark.SpringJsonReloadableMessageSource;
 
+
+/* Adapted from https://gist.github.com/eungju/1263507 */
+
+
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
@@ -14,6 +18,8 @@ import com.fasterxml.jackson.core.JsonParser;
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.springframework.util.PropertiesPersister;
+
+
 
 public class JsonPropertiesPersister implements PropertiesPersister {
     @Override

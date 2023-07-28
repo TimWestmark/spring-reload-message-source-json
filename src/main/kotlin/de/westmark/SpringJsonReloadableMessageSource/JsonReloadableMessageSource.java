@@ -24,6 +24,8 @@ import org.springframework.util.DefaultPropertiesPersister;
 import org.springframework.util.PropertiesPersister;
 import org.springframework.util.StringUtils;
 
+/* Derived from https://github.com/spring-projects/spring-framework/blob/main/spring-context/src/main/java/org/springframework/context/support/ReloadableResourceBundleMessageSource.java */
+
 public class JsonReloadableMessageSource extends AbstractResourceBasedMessageSource
         implements ResourceLoaderAware {
 
