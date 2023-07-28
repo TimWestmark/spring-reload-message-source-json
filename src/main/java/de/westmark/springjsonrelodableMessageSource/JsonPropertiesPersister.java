@@ -1,7 +1,4 @@
-package de.westmark.SpringJsonReloadableMessageSource;
-
-
-/* Adapted from https://gist.github.com/eungju/1263507 */
+package de.westmark.springjsonrelodableMessageSource;/* Adapted from https://gist.github.com/eungju/1263507 */
 
 
 import java.io.IOException;

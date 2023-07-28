@@ -1,4 +1,4 @@
-package de.westmark.SpringJsonReloadableMessageSource
+package de.westmark.springJsonReloadableMessageSource
 
 import org.springframework.web.bind.annotation.GetMapping
 import org.springframework.web.bind.annotation.PathVariable

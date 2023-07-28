@@ -1,4 +1,4 @@
-package de.westmark.SpringJsonReloadableMessageSource;
+package de.westmark.springjsonrelodableMessageSource;
 
 import java.io.IOException;
 import java.io.InputStream;
@@ -26,7 +26,7 @@ import org.springframework.util.StringUtils;
 
 /* Derived from https://github.com/spring-projects/spring-framework/blob/main/spring-context/src/main/java/org/springframework/context/support/ReloadableResourceBundleMessageSource.java */
 
-public class JsonReloadableMessageSource extends AbstractResourceBasedMessageSource
+public class JsonReloadableResourceBundleMessageSource extends AbstractResourceBasedMessageSource
         implements ResourceLoaderAware {
 
     private static final String PROPERTIES_SUFFIX = ".properties";

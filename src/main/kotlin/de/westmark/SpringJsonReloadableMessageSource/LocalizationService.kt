@@ -1,4 +1,4 @@
-package de.westmark.SpringJsonReloadableMessageSource
+package de.westmark.springJsonReloadableMessageSource
 
 import org.springframework.context.MessageSource
 import org.springframework.stereotype.Service
