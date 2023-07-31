@@ -39,7 +39,7 @@ public class JsonReloadableResourceBundleMessageSource extends AbstractResourceB
 
     private boolean concurrentRefresh = true;
 
-    private PropertiesPersister propertiesPersister = DefaultPropertiesPersister.INSTANCE;
+    private PropertiesPersister propertiesPersister = new JsonPropertiesPersister();
 
     private ResourceLoader resourceLoader = new DefaultResourceLoader();
 

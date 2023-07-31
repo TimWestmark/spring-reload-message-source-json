@@ -16,9 +16,7 @@ class SpringJsonReloadableMessageSourceApplication {
 
 
 //	Or this for Json
-		val messageSource =
-			JsonReloadableResourceBundleMessageSource()
-		messageSource.setPropertiesPersister(JsonPropertiesPersister())
+		val messageSource = JsonReloadableResourceBundleMessageSource()
 
 //	This is for all
 		messageSource.setBasenames("file:data/i18n-json/content")
