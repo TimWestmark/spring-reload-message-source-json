@@ -52,7 +52,7 @@ public class JsonPropertiesPersister implements PropertiesPersister {
                 i++;
             }
         } else {
-            props.setProperty(key, node.textValue());
+            props.setProperty(key, node.asText());
         }
     }
 
